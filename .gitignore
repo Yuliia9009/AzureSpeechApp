@@ -1,0 +1,21 @@
+.DS_Store
+# .NET build/IDE
+bin/
+obj/
+out/
+.vs/
+*.user
+*.suo
+
+# Editors
+.vscode/
+.idea/
+
+# Web (на всякий случай)
+node_modules/
+wwwroot/*.map
+
+# Конфиги с локальными секретами
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
