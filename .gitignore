@@ -1,5 +1,7 @@
+# OS
 .DS_Store
-# .NET build/IDE
+
+# .NET
 bin/
 obj/
 out/
@@ -11,11 +13,11 @@ out/
 .vscode/
 .idea/
 
-# Web (на всякий случай)
+# Web
 node_modules/
 wwwroot/*.map
 
-# Конфиги с локальными секретами
+# Local secrets
 appsettings.Development.json
 appsettings.Local.json
 secrets.json
