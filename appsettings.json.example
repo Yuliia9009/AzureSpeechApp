@@ -1,0 +1,17 @@
+{
+  "Azure": {
+    "Speech": {
+      "Region": "westeurope",
+      "Key": "<set-via-user-secrets>"
+    },
+    "Translator": {
+      "Region": "westeurope",
+      "Key": "<set-via-user-secrets>"
+    },
+    "Storage": {
+      "AccountName": "<your_account>",
+      "Container": "<your_container>",
+      "ConnectionString": "<set-via-user-secrets>"
+    }
+  }
+}
