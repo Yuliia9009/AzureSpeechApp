@@ -1,0 +1,6 @@
+@SpeechApp.API_HostAddress = http://localhost:5294
+
+GET {{SpeechApp.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

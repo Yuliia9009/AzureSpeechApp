@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AI Расшифровка и Перевод</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>🧠 AI Расшифровка и Перевод Речи</h1>
+        <label for="language">Выберите язык распознавания:</label>
+        <select id="language">
+            <option value="en-US">Английский</option>
+            <option value="ru-RU">Русский</option>
+            <option value="uk-UA">Украинский</option>
+        </select>
+
+        <div class="controls">
+            <button id="recordBtn" onclick="toggleRecording()">🎙 Говорить</button>
+            <span id="recordingIndicator" style="color: red; display: none;">🔴 Идёт запись...</span>
+            <input type="file" id="fileInput" accept="audio/*">
+            <button onclick="uploadFile()">📤 Загрузить файл</button>
+        </div>
+
+        <div class="output">
+            <h3>📃 Расшифровка:</h3>
+            <textarea id="recognizedText" rows="4"></textarea>
+
+            <h3>🌐 Перевод:</h3>
+            <select id="translateTo">
+                <option value="en">Английский</option>
+                <option value="ru">Русский</option>
+                <option value="uk">Украинский</option>
+            </select>
+            <button onclick="translateText()">🔁 Перевести</button>
+            <textarea id="translatedText" rows="4"></textarea>
+        </div>
+
+        <button onclick="downloadText()">📥 Скачать как .txt</button>
+    </div>
+
+    <script src="recorder.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
